@@ -1,0 +1,31 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="{% static 'css/forumpage.css' %}">
+</head>
+<body>
+
+<header>
+<h1>Europa Universalis 4</h1>
+      <nav class="nav">
+      <a href="/">Главная</a>
+      <a href="/forum">Форум</a>
+          <a href = "/forumnote">Запись</a>
+    </nav>
+</header>
+    <h2>Записи игроков</h2>
+    {% if notes %}
+        {% for el in notes %}
+            <div class="alert alert-warning mt-2">
+                <h3>{{ el.title }}</h3>
+                <p>{{ el.notes }} </p>
+            </div>
+        {% endfor %}
+    {% else %}
+        <p>Форум временно не доступен</p>
+    {% endif %}
+</body>
+</html>

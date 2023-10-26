@@ -1,0 +1,67 @@
+    header {
+        background-color: #333;
+        color: #bea30b;
+        padding: 20px;
+        text-align: center;
+        position: relative; /* Добавлено */
+    }
+    h1 {
+      margin: 0;
+    }
+
+    /* Стили для фото */
+    .photo {
+      position: absolute; /* Добавлено */
+      top: -100px; /* Добавлено */
+      left: 50%; /* Добавлено */
+      transform: translateX(-50%); /* Добавлено */
+    }
+
+    /* Стили для кнопок */
+    .nav {
+      display: flex; /* Добавлено */
+      justify-content: center; /* Добавлено */
+      gap: 20px; /* Добавлено */
+      margin-bottom: 20px; /* Добавлено */
+    }
+    .nav a {
+      color: #bea30b;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 18px;
+    }
+
+    /* Стили для списка интересных стран */
+    .countries {
+      margin-top: 20px;
+      display: flex;
+      justify-content: center;
+    }
+    .country {
+      background-color: #aeb9b4;
+      border-radius: 4px;
+      padding: 10px;
+      margin: 10px;
+      width: 200px;
+      transition: all 0.3s;
+      overflow: hidden;
+      cursor: pointer;
+    }
+    .country:hover {
+      transform: scale(1.1);
+      width: 300px;
+    }
+    .country:hover .content {
+      height: auto;
+      padding: 10px;
+    }
+    .country .content {
+      height: 0;
+      padding: 0;
+      transition: all 0.3s;
+      overflow: hidden;
+    }
+    .engl{
+        height: 30px;
+        width: 45px;
+    }
