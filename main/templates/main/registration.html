@@ -1,0 +1,28 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Регистрация</title>
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href = "{% static 'css/registration.css' %}"/>
+</head>
+<body>
+    <center><header>Регистрация</header></center>
+    <div>
+        <form method="post">
+            {% csrf_token %}
+            <h3>Имя пользователя</h3>
+            {{form.login}}
+            <h3>Адрес электронной почты</h3>
+            {{form.email}}
+            <h3>Пароль</h3>
+            {{form.password }}
+            <button type="submit" class="button">Зарегистрироваться</button>
+            <span>{{ error }}</span>
+        </form>
+    </div>
+</body>
+</html>

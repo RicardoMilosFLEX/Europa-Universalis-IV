@@ -19,13 +19,13 @@
     <h2>Записи игроков</h2>
     {% if notes %}
         {% for el in notes %}
-            <div class="alert alert-warning mt-2">
-                <h3>{{ el.title }}</h3>
+            <div class="forum">
+                <h3 class="">{{ el.title }}</h3>
                 <p>{{ el.notes }} </p>
             </div>
         {% endfor %}
     {% else %}
-        <p>Форум временно не доступен</p>
+        <p>Форум временно не работает</p>
     {% endif %}
 </body>
 </html>
