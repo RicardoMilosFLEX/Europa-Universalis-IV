@@ -1,0 +1,32 @@
+    header {
+      background-color: #333;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+    h1 {
+      margin: 0;
+    }
+
+    .countries {
+      margin-top: 20px;
+      display: flex;
+      justify-content: center;
+    }
+    .country {
+      background-color: #f2f2f2;
+      border-radius: 4px;
+      padding: 10px;
+      margin: 10px;
+      width: 200px;
+      cursor: pointer;
+      position: relative;
+    }
+    .country .content {
+      display: none;
+      position: absolute;
+      background-color: #fff;
+      border: 1px solid #ccc;
+      padding: 10px;
+      z-index: 1;
+    }

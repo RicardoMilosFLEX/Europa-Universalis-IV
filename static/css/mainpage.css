@@ -7,8 +7,12 @@
     }
     h1 {
       margin: 0;
-    }
 
+    }
+    .logo{
+        width: 30px;
+        height: 30px;
+    }
 
     .photo {
       position: absolute;
@@ -32,36 +36,109 @@
     }
 
 
-    .countries {
+    /*.countries {*/
+    /*  margin-top: 20px;*/
+    /*  display: flex;*/
+    /*  justify-content: center;*/
+    /*}*/
+    /*.country {*/
+    /*  background-color: #aeb9b4;*/
+    /*  border-radius: 4px;*/
+    /*  padding: 10px;*/
+    /*  margin: 10px;*/
+    /*  width: 200px;*/
+    /*  transition: all 0.3s;*/
+    /*  overflow: hidden;*/
+    /*  cursor: pointer;*/
+    /*}*/
+    /*.country:hover {*/
+    /*  transform: scale(1.1);*/
+    /*  width: 300px;*/
+    /*}*/
+    /*.country:hover .content {*/
+    /*  height: auto;*/
+    /*  padding: 10px;*/
+    /*}*/
+    /*.country .content {*/
+    /*  height: 0;*/
+    /*  padding: 0;*/
+    /*  transition: all 0.3s;*/
+    /*  overflow: hidden;*/
+    /*}*/
+    .engl{
+        height: 30px;
+        width: 45px;
+    }
+
+.countries {
       margin-top: 20px;
       display: flex;
       justify-content: center;
     }
     .country {
-      background-color: #aeb9b4;
+      background-color: #babbbe;
       border-radius: 4px;
       padding: 10px;
       margin: 10px;
       width: 200px;
-      transition: all 0.3s;
-      overflow: hidden;
       cursor: pointer;
-    }
-    .country:hover {
-      transform: scale(1.1);
-      width: 300px;
-    }
-    .country:hover .content {
-      height: auto;
-      padding: 10px;
+      position: relative;
     }
     .country .content {
-      height: 0;
-      padding: 0;
-      transition: all 0.3s;
-      overflow: hidden;
+      display: none;
+      position: absolute;
+      background-color: #fff;
+      border: 1px solid #ccc;
+      padding: 10px;
+      z-index: 1;
     }
-    .engl{
-        height: 30px;
-        width: 45px;
+    .county_title{
+        font-weight: bold;
+      font-size: 18px;
+        text-align: center;
+    }
+.scenarios_title{
+    font-weight: bold;
+    font-size: 18px;
+    text-align: center;
+}
+.scenarios{
+      margin-top: 20px;
+      display: flex;
+      justify-content: center;
+    }
+    .scenario{
+      background-color: #babbbe;
+      border-radius: 4px;
+      padding: 10px;
+      margin: 10px;
+      width: 200px;
+      cursor: pointer;
+      position: relative;
+    }
+    .scenario .content{
+        display: none;
+      position: absolute;
+      background-color: #fff;
+      border: 1px solid #ccc;
+      padding: 10px;
+      z-index: 1;
+        background-image: url("static/img/Ottomans_Rise.png");
+    }
+    .ottomans_rise{
+        width: 200px;
+        height: 100px;
+    }
+    .ottomans_rise_up{
+        width: 180px;
+        height: 100px;
+        padding: 5px;
+        margin: 10px;
+    }
+
+    .user{
+        margin: 1px;
+        padding: -12px;
+        font-weight: bold;
+        font-size: 18px;
     }
