@@ -32,3 +32,20 @@
         width: 30px;
         height: 30px;
     }
+    form {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  background: #f4f7f8;
+  border-radius: 8px;
+}
+form button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 100%;
+}

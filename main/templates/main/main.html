@@ -56,7 +56,7 @@
                 <img src="static/img/logo2.png" class="logo">
               <a href="">Главная</a>
               <a href="/forum">Форум</a>
-              <a href="/forumnote">Запись</a>
+              <a href="/forumnote">Создать запись</a>
                 {% if user.is_authenticated %}
                     <h4 class="user">Пользователь {{ user }}</h4>
                     <a href="{% url 'logout'%}">Выйти</a>
@@ -73,6 +73,7 @@
           <h2>Интересные страны</h2>
       </div>
       <div class="countries">
+{#    в классе countries 4 элемента country      #}
         <div class="country">
           <h3>Англия  <img src="static/img/England.png" class="engl" alt=""></h3>
           <div class="content">

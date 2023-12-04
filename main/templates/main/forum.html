@@ -3,31 +3,35 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Forum</title>
     <link rel="stylesheet" href="{% static 'css/forumpage.css' %}">
 </head>
 <body>
 
 <header>
 <h1>Europa Universalis 4</h1>
+    {#  Навигация по сайту  #}
       <nav class="nav">
           <img src="static/img/logo2.png" class="logo">
       <a href="/">Главная</a>
       <a href="/forum">Форум</a>
-          <a href = "/forumnote">Запись</a>
+          <a href = "/forumnote"> Создать запись</a>
           <img src="static/img/logo2.png" class="logo">
     </nav>
 </header>
+{# Основная часть #}
     <h2>Записи игроков</h2>
+{# Показ записей на форуме #}
     {% if notes %}
+{#   Notes - записи на форуме  #}
         {% for el in notes %}
             <div class="forum">
-                <h3 class="">{{ el.title }}</h3>
+                <h3>{{ el.title }}</h3>
                 <p>{{ el.notes }} </p>
             </div>
         {% endfor %}
     {% else %}
-        <p>Форум временно не работает</p>
+        <p>На форуме пока нет записей</p>
     {% endif %}
 </body>
 </html>

@@ -3,10 +3,9 @@
 {% block content %}
     <h1>Регистрация</h1>
     <hr>
-
     <form action="{% url 'register'%}" method="post">
     {{ form }}
     {% csrf_token %}
-    <button type="submit" class="btn btn-success">Зарегистрироваться</button>
+    <button type="submit" class="form button"> Зарегистрироваться</button>
     </form>
 {% endblock %}

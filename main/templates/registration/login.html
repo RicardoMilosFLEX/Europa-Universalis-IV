@@ -1,16 +1,15 @@
 {% extends 'main/base.html' %}
-
+{% load static %}
 {% block content %}
-    <h2>Вход в учётную запись</h2>
+    <h1>Вход в учётную запись</h1>
     <hr>
-
-    {% if form.errors %}
-        <p>{{ form.errors.error }}</p>
-    {% endif %}
-
     <form action="{% url 'login' %}" method="post">
+    {% if form.errors %}
+        <p class="error">{{ form.errors.error }}</p>
+    {% endif %}
     {{ form }}
     {% csrf_token %}
-    <button type="submit" class="btn btn-success">Подтвердить</button>
+    <button type="submit" class="form button">Подтвердить</button>
     </form>
+
 {% endblock %}
