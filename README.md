@@ -1,2 +1,2 @@
 # Europa-Universalis-IV
-Website about one of the best Paradox Interactive in the world!!!!! 
+Website about one of the best Paradox Interactive's game in the world!!!!! 
