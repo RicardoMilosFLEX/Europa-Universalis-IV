@@ -23,22 +23,27 @@
     h3 {
       text-align: center;
     }
-    .note{
+.note{
+        justify-content: center;
         text-align: center;
         width: 400px;
         height: 500px;
-    }
+        position: relative;
+        align-content: center;
+
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  background: #fdfdfd;
+  border-radius: 8px;
+}
     .logo{
         width: 30px;
         height: 30px;
     }
-    form {
-  max-width: 400px;
-  margin: 0 auto;
-  padding: 20px;
-  background: #f4f7f8;
-  border-radius: 8px;
-}
+
+
+
 form button {
   background-color: #4CAF50;
   color: white;
@@ -48,4 +53,12 @@ form button {
   border-radius: 4px;
   cursor: pointer;
   width: 100%;
+}
+form {
+    justify-content: center;
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  background: #fdfdfd;
+  border-radius: 8px;
 }
