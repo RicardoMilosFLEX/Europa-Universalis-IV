@@ -1,6 +1,6 @@
 from .models import Notes
 from django.forms import ModelForm, TextInput, Textarea
-from django import forms
+
 
 class Notesform(ModelForm):
     class Meta:

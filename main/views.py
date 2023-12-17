@@ -4,7 +4,6 @@ from .forms import Notesform
 def index(request):
     return render(request, 'main/main.html')
 
-
 def forum(request):
     notes = Notes.objects.order_by("-id")
     return render(request,'main/forum.html',{'title':'Форум','notes':notes})

@@ -3,8 +3,6 @@ from users.forms import UserCreationForm
 from django.shortcuts import render, redirect
 from django.views import View
 
-
-# Create your views here.
 class Register(View):
     template_name = 'registration/register.html'
 

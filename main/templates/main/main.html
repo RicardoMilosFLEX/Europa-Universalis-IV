@@ -8,46 +8,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Europa Universalis 4</title>
     <link rel="stylesheet" href = "{% static 'css/mainpage.css' %}"/>
-<script>
-    document.addEventListener('DOMContentLoaded', function() {
-      const countries = document.querySelectorAll('.country');
-      countries.forEach(country => {
-        country.addEventListener('click', function() {
-          const content = this.querySelector('.content');
-          countries.forEach(otherCountry => {
-            if (otherCountry !== this) {
-              otherCountry.querySelector('.content').style.display = 'none';
-            }
-          });
-          if (content.style.display === 'none') {
-            content.style.display = 'block';
-          } else {
-            content.style.display = 'none';
-          }
-        });
-      });
-    });
-  </script>
-    <script>
-    document.addEventListener('DOMContentLoaded', function() {
-      const countries = document.querySelectorAll('.scenario');
-      countries.forEach(country => {
-        country.addEventListener('click', function() {
-          const content = this.querySelector('.content');
-          countries.forEach(otherCountry => {
-            if (otherCountry !== this) {
-              otherCountry.querySelector('.content').style.display = 'none';
-            }
-          });
-          if (content.style.display === 'none') {
-            content.style.display = 'block';
-          } else {
-            content.style.display = 'none';
-          }
-        });
-      });
-    });
-  </script>
+    <script src="{% static 'javascript/main_page_script.js' %}"></script>
+
 </head>
 <body>
       <header>
@@ -63,8 +25,6 @@
                 {% else %}
                     <a href="{% url 'login' %}">Войти</a> | <a href="{% url 'register' %}">Регистрация</a>
                 {% endif %}
-{#              <li><a href="/reg">Регистрация</a></li>#}
-{#              <li><a href="">Войти</a></li>#}
                 <img src="static/img/logo2.png" class="logo">
 
             </nav>

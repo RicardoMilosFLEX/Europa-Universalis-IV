@@ -1,6 +1,4 @@
 from django.db import models
-from django import forms
-# Create your models here.
 
 class Notes(models.Model):
     title = models.CharField('Название темы', max_length=255)
